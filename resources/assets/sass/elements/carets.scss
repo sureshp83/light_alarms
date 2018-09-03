@@ -1,0 +1,13 @@
+// Caret
+//
+.caret {
+    // display: flex;
+}
+
+.caret-up {
+    @include caret(up);
+}
+
+.caret-down {
+    @include caret(down);
+}

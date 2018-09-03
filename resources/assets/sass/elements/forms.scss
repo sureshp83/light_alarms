@@ -1,0 +1,41 @@
+fieldset {
+    font-size:   0.9rem;
+    font-weight: 600;
+    color:       $gray-900;
+}
+
+// Input with button inside
+.input_with_btn {
+    position: relative;
+
+    &--input {
+        padding-right: 45px;
+        z-index: 0;
+    }
+
+    &--btn {
+        z-index:  $zindex-dropdown;
+        position: absolute;
+        top:      0;
+        right:    0;
+        bottom:   2px;
+    }
+}
+
+//
+// Labels (_forms.scss, line 83)
+//
+
+// For use with horizontal and inline forms, when you need the label (or legend)
+// text to align with the form controls.
+.col-form-label {
+    padding-bottom: 0.15rem;
+}
+
+.col-form-label-lg {
+    padding-bottom: 0.2rem;
+}
+
+.col-form-label-sm {
+    padding-bottom: 0;
+}

@@ -1,0 +1,36 @@
+// Base layout
+body,
+html {
+    padding: 0;
+    margin:  0;
+    height:  100vh;
+}
+
+.app {
+    height: 100%;
+}
+
+
+footer, .footer {
+    color:       #666;
+    height:      30px;
+    margin-top:  -30px;
+    margin-left: $sidenav-width;
+    text-align:  center;
+    font-size:   0.8em;
+}
+
+// Hide elements not yet loaded by Vue
+[v-cloak] {
+    display: none;
+}
+
+// Transitions
+a,
+button {
+    // transition: all .25s ease-in;
+}
+
+h1, h2, h3, h4 {
+    margin: 5px 0;
+}

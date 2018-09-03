@@ -1,0 +1,87 @@
+.search-autocomplete {
+    display:      block;
+    margin-right: 20px;
+    z-index:      $zindex-dropdown;
+
+    &__wrap {
+        position: relative;
+        padding:  0;
+        margin:   0;
+    }
+
+    &__input_wrap {
+        border:           1px solid transparent;
+        background-color: $gray-200;
+    }
+
+    &__input {
+        width:            340px;
+        height:           48px;
+        padding:          6px 15px;
+        border:           none;
+        border-radius:    0;
+        box-shadow:       none;
+        background-color: transparent;
+        margin-right:     38px;
+
+        &.form-control:focus {
+            box-shadow: none;
+            background-color: transparent;
+        }
+    }
+
+    &__input-icon {
+        position: absolute;
+        top:      14px;
+        right:    14px;
+
+        .icon {
+            width:  14px;
+            height: 16px;
+        }
+    }
+
+    &__loading {
+        color:      $orange;
+        position:   absolute;
+        right:      0;
+        left:       0;
+        z-index:    0;
+        text-align: center;
+    }
+
+    &__results {
+        position:         absolute;
+        right:            0;
+        left:             0;
+        z-index:          0;
+        background-color: $gray-200;
+        border-width:     0 1px 1px 1px;
+        border-style:     solid;
+        border-color:     $gray-300;
+        box-shadow:       0 0 5px -5px #dd;
+
+        ul {
+            padding:    0 15px 8px 15px;
+            list-style: none;
+
+            li {
+                &:first-letter {
+                    text-transform: uppercase;
+                }
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $gray-200;
+                }
+            }
+        }
+
+    }
+
+
+    &__focus {
+        border:           1px solid $gray-400;
+        box-shadow:       0 0 5px 1px #eee;
+        background-color: $gray-200;
+    }
+}

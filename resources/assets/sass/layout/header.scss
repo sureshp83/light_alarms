@@ -1,0 +1,31 @@
+.navbar-default {
+    height:        $header-height;
+    border-bottom: 1px solid $gray-400;
+}
+
+.navbar-brand {
+    padding: 0;
+    height:  40px;
+}
+
+.brand__logo {
+    width:       130px;
+    margin-left: 0;
+}
+
+
+
+@include media-breakpoint-up(lg) {
+    .navbar-default {
+        padding-left: 0;
+    }
+
+    .navbar-brand {
+        width:  $sidenav-width !important;
+    }
+
+    .brand__logo {
+        width:       130px;
+        margin-left: 50px;
+    }
+}

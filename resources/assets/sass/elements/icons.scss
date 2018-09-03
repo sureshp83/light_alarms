@@ -1,0 +1,36 @@
+/**
+ * Icons SVG
+ */
+.icon {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    color: red;
+    font-size: 32px;
+}
+========================================== */
+
+.ic-42 {
+    width:  42px;
+    height: 42px;
+}
+
+.icon-search    {
+    width:  19px;
+    height: 19px;
+}
+
+// FA icons
+// https://fontawesome.com/v4.7.0/icons/
+//
+.btn .fa-btn    { margin-right: 4px; }
+.btn-sm .fa-btn { margin-right: 2px; }
+.btn-lg .fa-btn { margin-right: 8px; }

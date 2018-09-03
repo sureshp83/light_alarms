@@ -1,0 +1,115 @@
+.sidenav {
+    background-color: $gray-200;
+    overflow:         visible;
+    display:          block;
+    position:         fixed;
+    padding:          0;
+    top:              $header-height;
+    bottom:           0;
+    left:             0;
+    width:            $sidenav-width;
+    height:           auto;
+
+    @include media-breakpoint-up(sm) {
+        width:   270px;
+        padding: 25px 0 0 0;
+    }
+
+    &_nav {
+        padding-left: 0;
+    }
+
+
+    &-item {
+        display:     block;
+        padding:     0;
+        width:       100%;
+        color:       $gray-900;
+        border-left: 3px solid transparent;
+        margin:      12px 0 0 0;
+
+        @include media-breakpoint-up(sm) {
+            margin:  5px 0 13px 0;
+            display: block;
+        }
+
+        &__link {
+            color:      $gray-900;
+            padding:    5px 5px 7px 5px !important;
+            display:    block;
+            text-align: left;
+            font-size:  0.87rem;
+
+            &:hover, &:active, &:focus { text-decoration: none; }
+        }
+
+        &--active {
+            background-color:  $gray-100;
+            border-left-color: $primary;
+
+            > .sidenav-item__link {
+                padding-left: 43px;
+
+                .caret,
+                .icon,
+                .title {
+                    color: $primary !important;
+                }
+                .title {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .icon {
+            top:      4px;
+            margin:   0 5px 0 10px;
+            position: relative;
+        }
+
+        .caret {
+            position: absolute;
+            right: 12px;
+            margin-top: 5px;
+        }
+    }
+
+    .sidenav-item .title {
+        text-transform: uppercase;
+    }
+}
+
+
+.collapsed > .when-opened,
+:not(.collapsed) > .when-closed {
+    display: none;
+}
+
+.collapsable > :not(.collapsed) {
+    color: $primary !important;
+    background-color:  $gray-100;
+
+    > .title {
+        font-weight: 700;
+    }
+}
+
+
+.sidenav_opened {
+    padding:          4px 0;
+    background-color: $gray-100;
+
+    .sidenav-item {
+        margin:      4px 0;
+        border-left: 0;
+        padding-left: 42px;
+
+        .title {
+            text-transform: capitalize;
+        }
+    }
+
+    .btn-link {
+        font-size: 0.78rem;
+    }
+}

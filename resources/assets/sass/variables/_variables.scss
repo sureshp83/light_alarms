@@ -1,0 +1,230 @@
+// Variables extending Bootstrap variables
+// ---------------------------------------
+
+
+// Components
+//
+$component-active-color:      $primary !default;
+
+// Options (line 97)
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret:              true !default;
+$enable-rounded:            true !default;
+$enable-shadows:            false !default;
+$enable-gradients:          false !default;
+$enable-transitions:        true !default;
+$enable-hover-media-query:  false !default; // Deprecated, no longer affects any compiled CSS
+$enable-grid-classes:       true !default;
+$enable-print-styles:       true !default;
+
+
+// Body (line 139)
+//
+$body-bg:     #fff !default;
+$body-color:  $gray-700 !default;
+
+
+// Links
+//
+$link-color:            $gray-700 !default;
+$link-decoration:       none !default;
+$link-hover-color:      darken($red, 10%) !default;
+$link-hover-decoration: underline !default;
+
+
+// Components
+//
+$border-radius:         0 !default;
+$border-radius-lg:      0 !default;
+$border-radius-sm:      0 !default;
+
+/*
+$component-active-color:      $white !default;
+$component-active-bg:         theme-color("primary") !default;
+
+*/
+$caret-width:   .4em !default;
+
+
+// Fonts (line 224)
+//
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Raleway", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.10) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+
+// Buttons font size are smaller then default
+$btn-font-size-lg:        ($font-size-base) !default;
+$btn-font-size-sm:        ($font-size-base * .85) !default;
+
+$font-weight-light:           200 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            600 !default;
+
+
+
+// Buttons (line 344)
+//
+$btn-padding-y:               .25rem !default;
+$btn-padding-x:               1.5rem !default;
+// $btn-line-height:             $input-btn-line-height !default;
+
+// $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
+// $btn-padding-x-sm:            $input-btn-padding-x-sm !default;
+// $btn-line-height-sm:          $input-btn-line-height-sm !default;
+
+// $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
+// $btn-padding-x-lg:            $input-btn-padding-x-lg !default;
+// $btn-line-height-lg:          $input-btn-line-height-lg !default;
+
+$btn-border-width:            2px !default;
+
+// $btn-font-weight:             $font-weight-bold !default;
+// $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
+// $btn-focus-width:             $input-btn-focus-width !default;
+// $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
+// $btn-disabled-opacity:        .65 !default;
+// $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
+
+// $btn-link-disabled-color:     $gray-600 !default;
+
+// $btn-block-spacing-y:         .5rem !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           0 !default;
+$btn-border-radius-lg:        0 !default;
+$btn-border-radius-sm:        0 !default;
+
+// $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+
+
+// Forms (line 381)
+//
+$input-bg:                    transparent !default;
+$custom-select-bg:            transparent !default;
+
+$custom-select-font-size-lg:     105% !default;
+
+$form-group-margin-bottom:       1.25rem !default;
+
+
+// Dropdowns (line 528)
+//
+// Dropdown menu container and contents.
+
+// $dropdown-min-width:                10rem !default;
+// $dropdown-padding-y:                .5rem !default;
+// $dropdown-spacer:                   .125rem !default;
+$dropdown-bg:                       $gray-200 !default;
+// $dropdown-border-color:             rgba($black, .15) !default;
+// $dropdown-border-radius:            $border-radius !default;
+// $dropdown-border-width:             $border-width !default;
+// $dropdown-divider-bg:               $gray-200 !default;
+// $dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
+
+// $dropdown-link-color:               $gray-900 !default;
+// $dropdown-link-hover-color:         darken($gray-900, 5%) !default;
+// $dropdown-link-hover-bg:            $gray-100 !default;
+
+// $dropdown-link-active-color:        $component-active-color !default;
+// $dropdown-link-active-bg:           $component-active-bg !default;
+
+// $dropdown-link-disabled-color:      $gray-600 !default;
+
+// $dropdown-item-padding-y:           .25rem !default;
+// $dropdown-item-padding-x:           1.5rem !default;
+
+// $dropdown-header-color:             $gray-600 !default;
+
+
+
+// Cards (line 656 ...)
+//
+// $card-spacer-y:                     .75rem !default;
+// $card-spacer-x:                     1.25rem !default;
+// $card-border-width:                 $border-width !default;
+$card-border-radius:                0 !default;
+$card-border-color:                 #eee !default;
+$card-inner-border-radius:          0 !default;
+$card-cap-bg:                       transparent !default;
+$card-bg:                           transparent !default;
+
+// $card-img-overlay-padding:          1.25rem !default;
+
+// $card-group-margin:                 ($grid-gutter-width / 2) !default;
+// $card-deck-margin:                  $card-group-margin !default;
+
+// $card-columns-count:                3 !default;
+// $card-columns-gap:                  1.25rem !default;
+// $card-columns-margin:               $card-spacer-y !default;
+
+
+
+// Tooltips (line 677)
+
+// $tooltip-font-size:           $font-size-sm !default;
+// $tooltip-max-width:           200px !default;
+$tooltip-color:               $white !default;
+$tooltip-bg:                  $primary !default;
+// $tooltip-border-radius:        $border-radius !default;
+// $tooltip-opacity:             .9 !default;
+// $tooltip-padding-y:           .25rem !default;
+// $tooltip-padding-x:           .5rem !default;
+// $tooltip-margin:              0 !default;
+
+// $tooltip-arrow-width:         .8rem !default;
+// $tooltip-arrow-height:        .4rem !default;
+// $tooltip-arrow-color:         $tooltip-bg !default;
+
+
+
+// Modals (line 734)
+//
+
+// $modal-inner-padding:         1rem !default;
+
+// $modal-dialog-margin:         .5rem !default;
+// $modal-dialog-margin-y-sm-up: 1.75rem !default;
+
+// $modal-title-line-height:           $line-height-base !default;
+
+$modal-content-bg:               $gray-100 !default;
+// $modal-content-border-color:     rgba($black, .2) !default;
+// $modal-content-border-width:     $border-width !default;
+// $modal-content-box-shadow-xs:    0 .25rem .5rem rgba($black, .5) !default;
+// $modal-content-box-shadow-sm-up: 0 .5rem 1rem rgba($black, .5) !default;
+
+// $modal-backdrop-bg:           $black !default;
+// $modal-backdrop-opacity:      .5 !default;
+// $modal-header-border-color:   $gray-200 !default;
+// $modal-footer-border-color:   $modal-header-border-color !default;
+// $modal-header-border-width:   $modal-content-border-width !default;
+// $modal-footer-border-width:   $modal-header-border-width !default;
+// $modal-header-padding:        1rem !default;
+
+// $modal-lg:                          800px !default;
+// $modal-md:                          500px !default;
+// $modal-sm:                          300px !default;
+
+// $modal-transition:                  transform .3s ease-out !default;
+
+
+
+// Breadcrumbs (line 834)
+
+$breadcrumb-padding-y:              .75rem !default;
+$breadcrumb-padding-x:              0 !default;
+$breadcrumb-item-padding:           .5rem !default;
+
+$breadcrumb-margin-bottom:          1rem !default;
+
+$breadcrumb-bg:                     transparent !default;
+$breadcrumb-divider-color:          $primary !default;
+$breadcrumb-active-color:           $primary !default;
+$breadcrumb-divider:                ">" !default;

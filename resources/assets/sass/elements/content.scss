@@ -1,0 +1,10 @@
+.content {
+    min-height: 100%;
+    padding:    40px 80px 40px 70px;
+    margin:     $header-height 0 30px $sidenav-width;
+
+    @include media-breakpoint-up(md) {
+        padding: 60px 100px 60px 120px;
+        margin:  $header-height-fixed 0 30px $sidenav-width;
+    }
+}

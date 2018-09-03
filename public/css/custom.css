@@ -1,0 +1,342 @@
+.manageagency .panel-heading .btn , .managemembers .panel-heading .btn  {
+    font-size: 26px;
+    color: #aaa;
+    font-size: 25px;
+    padding: 0px 1.5rem;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+.manageagency .panel-heading .btn-link.active , .managemembers .panel-heading .btn-link.active  {
+    color: #000000;
+}
+.manageagency .panel-heading .btn-link:hover , .managemembers .panel-heading .btn-link:hover
+{
+    text-decoration:none;
+}
+.manageagency .panel-heading .border-right , .managemembers .panel-heading .border-right {
+    border-right: 3px solid #dee2e6 !important;
+    border-radius: 0px;
+}
+.manageagency .panel-body .table thead th , .managemembers .panel-body .table thead th , .manageagency .table thead th  {
+    border-top: 0px;
+    border-bottom: 3px solid #cdd0d4;
+    padding: 5px 0.75rem;
+}
+.manageagency .panel-heading  span.badge , .managemembers .panel-heading  span.badge {
+    color: #fff;
+    background-color: #ff000d;
+    border-color: #ff000d;
+    border-radius: 50px;
+    padding: 4px;
+    font-size: 11px;
+    line-height: 10px;
+    top: -12px;
+}
+.manageagency .panel-body .table  td  , .managemembers .panel-body .table  td ,   #table_id td{
+border-bottom: 1px solid #dee2e6;
+color: rgba(0,0,0,0.6) ;
+font-weight: 500;
+font-size: 14px;
+}
+.manageagency .panel-body .table #show-modal {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 0px 5px;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+.manageagency .panel-heading .btn.btn-sm , .managemembers .panel-heading .btn.btn-sm
+{
+    margin-bottom:0px;
+}
+.custom-checkbox.Checkbox {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+.custom-checkbox.Checkbox > * {
+    position: absolute;
+}
+.Checkbox-visible {
+    border: 1px solid gray;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    background: #fff;
+    border: 1px solid #dedede;
+    border-radius: 0px;
+}
+.custom-checkbox.Checkbox > input {
+    z-index: 1;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translatex(-50%) translatey(-50%);
+    transform: translatex(-50%) translatey(-50%);
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.custom-checkbox.Checkbox > input:checked + .Checkbox-visible::after
+{
+    position: absolute;
+    content: "";
+    left: 6px;
+    top: 3px;
+    width: 7px;
+    height: 11px;
+    border: solid red;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.custom-checkbox.Checkbox > input:hover + .Checkbox-visible {
+    border-color: #cccccc;
+}
+
+/*==agency-awaiting-start==*/
+.agency-sidebar
+{
+    border:1px solid #ececec;
+}
+.agency-image {
+    padding: 20px;
+    text-align: center;
+}
+.agency-image img {
+    max-height: 85px;
+}
+.agency-sidebar-main  {
+    max-width: 328px;
+}
+.agency-sidebar hr{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin: 35px -30px 1px -30px;
+}
+.agencybgcolor
+{
+    background-color: #ececec;
+}
+.agency-content {
+    padding: 30px 30px 1px 30px;
+}
+.agency-title {
+    color: #000000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.agency-content p{
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: rgba(0,0,0,0.4);
+}
+.agency-content label {
+    color: rgba(0,0,0,0.6);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.custom-checkbox.Checkbox span {
+    margin-left: 31px;
+    text-transform: capitalize;
+    line-height: 20px;
+    margin-top: -2px;
+    display: block;
+}
+.agency-content .custom-checkbox.Checkbox
+{
+    margin-top:5px;
+}
+
+.agency-content a.text-primary {
+    position: absolute;
+    right: 0;
+}
+
+.panel-body.tab-responsive {
+    overflow: auto;
+}
+
+
+/*==modal-css-start==*/
+.managemembers .modal ,  .manageagency .modal , .managevideo .modal{
+    background-color: transparent;
+}
+.managemembers .btn-close ,  .manageagency .btn-close , .managevideo .btn-close  {
+    position: absolute;
+    right: 15px;
+    color: #000000;
+    padding: 0px;
+    top: 10px;
+}
+.managemembers .modal-header , .manageagency .modal-header , .managevideo .modal-header{
+    padding: 0px;
+    border: none;
+}
+.managemembers .modal-footer , .manageagency .modal-footer , .managevideo .modal-footer {
+    border-top: 0px;
+    justify-content: center;
+    margin-bottom:0px;
+}
+.managemembers .modal-default-button.btn-save {
+    width: 115px;
+    padding: 9px 0px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid #000000;
+    line-height: 14px;
+}
+.managemembers .btn-cancle
+{
+    width: 115px;
+    padding: 9px 0px;
+    background-color: #ffffff;
+    border: 2px solid red;
+    font-weight: bold;
+    font-size: 14px;
+    color:red;
+    line-height: 14px;
+}
+.managemembers .modal-dialog {
+    pointer-events: visible;
+    background-color: #ffffff;
+    max-width: 780px !important;
+    padding: 40px 80px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.managevideo .modal-body{
+    position: relative;
+    margin: 40px 10px;
+}
+.managevideo .modal-dialog{
+    pointer-events: visible;
+    background-color: #ffffff;
+    max-width: 780px !important;
+    padding: 0px 0px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.manageagency .modal-dialog
+{
+    width:780px;
+    background-color:#ffffff;
+    max-width: 780px !important;
+    padding: 40px 35px;
+    margin:20px auto;
+    pointer-events: visible;
+    overflow: auto;
+}
+.manageagency .modal-header {
+    font-size: 21px;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.modal-dialog.showmorelink{
+    color: #ff000d;
+}
+
+.manageagency  .btn-save {
+    padding: 0px 10px;
+    font-size: 13px;
+    /*border: 2px solid #cccccc;*/
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.manageagency a.badge.badge-primary , .managemembers a.badge.badge-primary{
+    border-radius: 50px;
+    padding: 3px 10px;
+    text-transform: uppercase;
+}
+
+.mem-name {
+    color: #6e7479;
+    font-weight: bold;
+}
+
+.bgcolor .bg-light
+{
+    background-color: #ececec !important;
+}
+.managemembers #table_id a#show-modal {
+    background-color: #000000;
+    border-radius: 50px;
+    color: #ffffff;
+    padding: 1px 8px;
+    font-size: 12px;
+}
+
+.checkbox-inline .custom-checkbox.Checkbox {
+    min-width: 15%;;
+    display: inline-block;
+    width: auto;
+}
+.checkbox-inline .custom-checkbox.Checkbox > input
+{
+    width:100%;
+}
+
+/* dakshay */
+.manageagency i.fa.fa-trash {
+    color: #5a5a5a;
+    font-size: 22px;
+}
+
+.manageagency .modal-header .btn-save {
+    color: #6f6f6f;
+    background: transparent;
+    border: 2px solid #d2d2d2;
+}
+
+.manageagency .modal-header .btn-save.active {
+    color: #fff;
+    background: #ff000d;
+    border: 2px solid #d2d2d2;
+}
+
+.manageagency .modal-body button.btn.btn-dark {
+    background: transparent;
+    border: none;
+    color: #e83c49;
+}
+
+.manageagency .modal-body button.btn.btn-dark:focus {
+    box-shadow: none;
+}
+
+.manageagency i.fa.fa-trash.active
+{
+    color: #e83c49;
+}
+
+.managemembers i.fa.fa-trash {
+    color: #5a5a5a;
+    font-size: 22px;
+}
+
+.managemembers i.fa.fa-trash.active
+{
+    color: #e83c49;
+}

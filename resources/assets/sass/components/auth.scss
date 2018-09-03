@@ -1,0 +1,65 @@
+/**
+ * Authentication, Register, Recover, ...
+ */
+.auth-container {
+    height:      100%;
+    display:     flex;
+    align-items: center;
+}
+
+
+.auth {
+    border:           none;
+    width:            100%;
+    margin:           40px auto 0 auto;
+    align-self:       flex-start;
+    background-color: $gray-100;
+
+    @include media-breakpoint-up(xs) {
+        max-width:  640px;
+        align-self: center;
+    }
+
+    fieldset {
+        margin-top:     25px;
+        margin-bottom:  15px;
+    }
+
+    &__wrap {
+        border-width: 0 1px 1px 1px;
+        border-color: #eee;
+        border-style: solid;
+    }
+
+    &__title {
+        margin:      20px 0 0 0;
+        padding:     50px 0 20px 0;
+        font-size:   2.2rem;
+        font-weight: 400;
+        text-align:  center;
+    }
+
+    &__card {
+        background-color: transparent;
+        border-width: 0 0 1px 0 !important;
+    }
+
+    &__header {
+        border:           0;
+        padding:          20px 0;
+        text-align:       center;
+        background-color: transparent !important;
+        font-size:        2.2rem;
+        font-weight:      300;
+
+        @include media-breakpoint-up(xs) {
+            padding: 24px 30px;
+        }
+    }
+
+    &__selector {
+        display:   block;
+        width:     100%;
+        font-size: 1.35em;
+    }
+}

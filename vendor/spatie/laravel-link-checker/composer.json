@@ -1,0 +1,52 @@
+{
+    "name": "spatie/laravel-link-checker",
+    "description": "Check all links in a Laravel app",
+    "keywords": [
+        "spatie",
+        "laravel-link-checker",
+        "link",
+        "checker",
+        "crawler",
+        "health"
+    ],
+    "homepage": "https://github.com/spatie/laravel-link-checker",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.0",
+        "illuminate/support": "^5.3",
+        "spatie/crawler": "^2.0.2"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "^5.7",
+        "orchestra/testbench": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\LinkChecker\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\LinkChecker\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spatie\\LinkChecker\\LinkCheckerServiceProvider"
+            ]
+        }
+    }
+}

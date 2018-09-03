@@ -1,0 +1,56 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,400,600");
+
+// Variables
+@import "variables/_colors";
+@import "variables/_variables";
+@import "variables/_layout";
+
+
+// Load Bootstrap
+@import "boostrap-components";       // load single components selection
+// @import '~bootstrap/scss/bootstrap';     // load entire package
+
+// Bootstrap-Vue
+@import "~bootstrap-vue/dist/bootstrap-vue.css";
+
+
+// Elements
+@import "elements/content";
+@import "elements/cards";
+@import "elements/carets";
+@import "elements/checkbox";
+@import "elements/dropdown";
+@import "elements/forms";
+@import "elements/icons";
+@import "elements/iframe";
+
+
+// Overwrite Bootstrap styles
+@import "elements/buttons";
+
+
+// Reset styles
+@import "reset";
+
+
+// Layout
+@import "layout/base";
+@import "layout/header";
+@import "layout/sidenav";
+
+
+// Components
+@import "components/auth";
+@import "components/items";
+
+// Sweet alert
+// @import "sweetalert/buttons";
+// @import "sweetalert/button-loader";
+// @import "sweetalert/content";
+// @import "sweetalert/icons";
+// @import "sweetalert/text";
+
+
+// Vue js Components (TODO - load from webpack)
+@import "./../js/components/SearchAutocomplete/SearchAutocomplete";
